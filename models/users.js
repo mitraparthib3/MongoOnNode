@@ -9,4 +9,4 @@ const usersSchema = new mongoose.Schema({
   email: { type: String, require: false },
 });
 // model(exportName, schema, collectionName)
-module.exports = mongoose.model("UsersModel", usersSchema, "customers");
+module.exports = mongoose.model("UsersModel", usersSchema, "misc");

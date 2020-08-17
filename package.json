@@ -1,0 +1,25 @@
+{
+  "name": "mongoonnode",
+  "version": "1.0.0",
+  "description": "Try MongoDB on node.js on express.js framework ",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongodb",
+    "express.js",
+    "node.js"
+  ],
+  "author": "Parthib Mitra",
+  "license": "MIT ",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.26"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

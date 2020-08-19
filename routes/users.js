@@ -19,7 +19,7 @@ router.get("/getUser/:id", getUserById, (req, res) => {
 });
 
 // post a new entry
-router.post("/postUsers", async (req, res) => {
+router.post("/postUser", async (req, res) => {
   console.log(req.body);
   const user = new UsersModel({
     name: req.body.name,
@@ -37,7 +37,7 @@ router.post("/postUsers", async (req, res) => {
 // delete a user
 router.delete("/deleteUser/:id", getUserById, async (req, res) => {
   try {
-    const deleteUser = await res.user.remove();
+    await res.user.remove();
     res.status(204).send({ message: "User deleted." });
   } catch (err) {
     res.status(500).send({ message: "Internal error." });

@@ -1,0 +1,19 @@
+GET http://localhost:8080/api/users/getUsers
+
+###
+GET http://localhost:8080/api/users/getUser/5f3acfc40849eb907af15686
+
+
+### 
+POST http://localhost:8080/api/users/postUsers
+Content-Type: application/json
+
+{
+    "name": "rest client",
+    "active": true,
+    "email": "iloverestclient@google.com"
+
+}
+
+###
+DELETE http://localhost:8080/api/users/deleteUser/5f3acfc40849eb907af15686
